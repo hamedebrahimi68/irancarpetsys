@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="fa" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="light" data-menu-styles="dark"
     data-toggled="close">
@@ -16,48 +17,48 @@
     <title> قالب HTML داشبورد مدیریتی xintra </title>
 
     <!-- Favicon -->
-    <link rel="icon" href="./assets/images/brand-logos/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{% static 'assets/images/brand-logos/favicon.ico' %}" type="image/x-icon">
 
     <!-- Start::Styles -->
 
     <!-- Choices JS -->
-    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="{% static 'assets/libs/choices.js/public/assets/scripts/choices.min.js' %}"></script>
 
     <!-- Main Theme Js -->
-    <script src="./assets/js/main.js"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
 
     <!-- Bootstrap Css -->
-    <link id="style" href="./assets/libs/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link id="style" href="{% static 'assets/libs/bootstrap/css/bootstrap.rtl.min.css' %}" rel="stylesheet">
 
     <!-- Style Css -->
-    <link href="./assets/css/styles.css" rel="stylesheet">
+    <link href="{% static 'assets/css/styles.css' %}" rel="stylesheet">
 
     <!-- Icons Css -->
-    <link href="./assets/css/icons.css" rel="stylesheet">
+    <link href="{% static 'assets/css/icons.css' %}" rel="stylesheet">
 
     <!-- Node Waves Css -->
-    <link href="./assets/libs/node-waves/waves.min.css" rel="stylesheet">
+    <link href="{% static 'assets/libs/node-waves/waves.min.css' %}" rel="stylesheet">
 
     <!-- Simplebar Css -->
-    <link href="./assets/libs/simplebar/simplebar.min.css" rel="stylesheet">
+    <link href="{% static 'assets/libs/simplebar/simplebar.min.css' %}" rel="stylesheet">
 
     <!-- Color Picker Css -->
-    <link rel="stylesheet" href="./assets/libs/flatpickr/flatpickr.min.css">
-    <link rel="stylesheet" href="./assets/libs/simonwep/pickr/themes/nano.min.css">
+    <link rel="stylesheet" href="{% static 'assets/libs/flatpickr/flatpickr.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/libs/simonwep/pickr/themes/nano.min.css' %}">
 
     <!-- Choices Css -->
-    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="{% static 'assets/libs/choices.js/public/assets/styles/choices.min.css' %}">
 
     <!-- FlatPickr CSS -->
-    <link rel="stylesheet" href="./assets/libs/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" href="{% static 'assets/libs/flatpickr/flatpickr.min.css' %}">
 
     <!-- Auto Complete CSS -->
-    <link rel="stylesheet" href="./assets/libs/tarekraafat/autocomplete.js/css/autoComplete.css">
+    <link rel="stylesheet" href="{% static 'assets/libs/tarekraafat/autocomplete.js/css/autoComplete.css' %}">
     <!-- End::Styles -->
 
 
     <!-- FlatPickr CSS -->
-    <link rel="stylesheet" href="./assets/libs/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" href="{% static 'assets/libs/flatpickr/flatpickr.min.css' %}">
 
 
 </head>
@@ -534,10 +535,8 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-between canvas-footer flex-nowrap gap-2">
-                    <a href="https://www.rtl-theme.com/author/hogondesign/products/" target="_blank"
-                        class="btn btn-primary text-nowrap">خرید</a>
-                    <a href="https://www.rtl-theme.com/author/hogondesign/products/" target="_blank"
-                        class="btn btn-secondary text-nowrap">نمونه کار</a>
+                    <a href="#" class="btn btn-primary text-nowrap">خرید</a>
+                    <a href="#" class="btn btn-secondary text-nowrap">نمونه کار</a>
                     <a href="javascript:void(0);" id="reset-all" class="btn btn-danger text-nowrap">بازنشانی</a>
                 </div>
             </div>
@@ -547,7 +546,7 @@
 
     <!-- Loader -->
     <div id="loader">
-        <img src="./assets/images/media/loader.svg" alt="">
+        <img src="{% static 'assets/images/media/loader.svg' %}" alt="">
     </div>
     <!-- Loader -->
 
@@ -566,13 +565,13 @@
                     <!-- Start::header-element -->
                     <div class="header-element">
                         <div class="horizontal-logo">
-                            <a href="index.html" class="header-logo">
-                                <img src="./assets/images/brand-logos/desktop-logo.png" alt="logo" class="desktop-logo">
-                                <img src="./assets/images/brand-logos/toggle-dark.png" alt="logo" class="toggle-dark">
-                                <img src="./assets/images/brand-logos/desktop-dark.png" alt="logo" class="desktop-dark">
-                                <img src="./assets/images/brand-logos/toggle-logo.png" alt="logo" class="toggle-logo">
-                                <img src="./assets/images/brand-logos/toggle-white.png" alt="logo" class="toggle-white">
-                                <img src="./assets/images/brand-logos/desktop-white.png" alt="logo"
+                            <a href="{% url 'dashboard' %}" class="header-logo">
+                                <img src="{% static 'assets/images/brand-logos/desktop-logo.png' %}" alt="logo" class="desktop-logo">
+                                <img src="{% static 'assets/images/brand-logos/toggle-dark.png' %}" alt="logo" class="toggle-dark">
+                                <img src="{% static 'assets/images/brand-logos/desktop-dark.png' %}" alt="logo" class="desktop-dark">
+                                <img src="{% static 'assets/images/brand-logos/toggle-logo.png' %}" alt="logo" class="toggle-logo">
+                                <img src="{% static 'assets/images/brand-logos/toggle-white.png' %}" alt="logo" class="toggle-white">
+                                <img src="{% static 'assets/images/brand-logos/desktop-white.png' %}" alt="logo"
                                     class="desktop-white">
                             </a>
                         </div>
@@ -636,7 +635,7 @@
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="d-flex align-items-center">
                                             <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                                <img src="./assets/images/flags/us_flag.jpg" alt="img">
+                                                <img src="{% static 'assets/images/flags/us_flag.jpg' %}" alt="img">
                                             </span>
                                             انگلیسی
                                         </div>
@@ -646,7 +645,7 @@
                             <li>
                                 <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
                                     <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                        <img src="./assets/images/flags/spain_flag.jpg" alt="img">
+                                        <img src="{% static 'assets/images/flags/spain_flag.jpg' %}" alt="img">
                                     </span>
                                     اسپانیایی
                                 </a>
@@ -654,7 +653,7 @@
                             <li>
                                 <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
                                     <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                        <img src="./assets/images/flags/french_flag.jpg" alt="img">
+                                        <img src="{% static 'assets/images/flags/french_flag.jpg' %}" alt="img">
                                     </span>
                                     فرانسوی
                                 </a>
@@ -662,7 +661,7 @@
                             <li>
                                 <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
                                     <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                        <img src="./assets/images/flags/uae_flag.jpg" alt="img">
+                                        <img src="{% static 'assets/images/flags/uae_flag.jpg' %}" alt="img">
                                     </span>
                                     عربي
                                 </a>
@@ -670,7 +669,7 @@
                             <li>
                                 <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
                                     <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                        <img src="./assets/images/flags/germany_flag.jpg" alt="img">
+                                        <img src="{% static 'assets/images/flags/germany_flag.jpg' %}" alt="img">
                                     </span>
                                     آلمانی
                                 </a>
@@ -678,7 +677,7 @@
                             <li>
                                 <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
                                     <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                        <img src="./assets/images/flags/china_flag.jpg" alt="img">
+                                        <img src="{% static 'assets/images/flags/china_flag.jpg' %}" alt="img">
                                     </span>
                                     چینی
                                 </a>
@@ -686,7 +685,7 @@
                             <li>
                                 <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
                                     <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                        <img src="./assets/images/flags/italy_flag.jpg" alt="img">
+                                        <img src="{% static 'assets/images/flags/italy_flag.jpg' %}" alt="img">
                                     </span>
                                     ایتالیایی
                                 </a>
@@ -694,7 +693,7 @@
                             <li>
                                 <a class="dropdown-item d-flex align-items-center" href="javascript:void(0);">
                                     <span class="avatar avatar-rounded avatar-xs lh-1 me-2">
-                                        <img src="./assets/images/flags/russia_flag.jpg" alt="img">
+                                        <img src="{% static 'assets/images/flags/russia_flag.jpg' %}" alt="img">
                                     </span>
                                     روسی
                                 </a>
@@ -766,13 +765,13 @@
                                     <div class="d-flex align-items-center cart-dropdown-item gap-3">
                                         <div class="lh-1">
                                             <span class="avatar avatar-xl bg-primary-transparent">
-                                                <img src="./assets/images/ecommerce/png/30.png" alt="هندزفری">
+                                                <img src="{% static 'assets/images/ecommerce/png/30.png' %}" alt="هندزفری">
                                             </span>
                                         </div>
                                         <div class="flex-fill">
                                             <div class="d-flex align-items-center justify-content-between mb-0">
                                                 <div class="mb-0 fs-14 fw-medium">
-                                                    <a href="cart.html">هندزفری</a>
+                                                    <a href="{% url 'cart' %}">هندزفری</a>
                                                     <div class="text-truncate">
                                                         <p class="mb-0 header-cart-text text-truncate fs-11 text-muted">
                                                             توضیح محصول</p>
@@ -797,13 +796,13 @@
                                     <div class="d-flex align-items-center cart-dropdown-item gap-3">
                                         <div class="lh-1">
                                             <span class="avatar avatar-xl bg-primary-transparent">
-                                                <img src="./assets/images/ecommerce/png/29.png" alt="کیف">
+                                                <img src="{% static 'assets/images/ecommerce/png/29.png' %}" alt="کیف">
                                             </span>
                                         </div>
                                         <div class="flex-fill">
                                             <div class="d-flex align-items-center justify-content-between mb-0">
                                                 <div class="mb-0 fs-14 fw-medium">
-                                                    <a href="cart.html">کیف</a>
+                                                    <a href="{% url 'cart' %}">کیف</a>
                                                     <div class="text-truncate">
                                                         <p class="mb-0 header-cart-text text-truncate fs-11 text-muted">
                                                             توضیح محصول</p>
@@ -828,7 +827,7 @@
                                     <div class="d-flex align-items-center cart-dropdown-item gap-3">
                                         <div class="lh-1">
                                             <span class="avatar avatar-xl bg-primary-transparent">
-                                                <img src="./assets/images/ecommerce/png/32.png" alt="ساعت">
+                                                <img src="{% static 'assets/images/ecommerce/png/32.png' %}" alt="ساعت">
                                             </span>
                                         </div>
                                         <div class="flex-fill">
@@ -859,7 +858,7 @@
                                     <div class="d-flex align-items-center cart-dropdown-item gap-3">
                                         <div class="lh-1">
                                             <span class="avatar avatar-xl bg-primary-transparent">
-                                                <img src="./assets/images/ecommerce/png/12.png" alt="لباس">
+                                                <img src="{% static 'assets/images/ecommerce/png/12.png' %}" alt="لباس">
                                             </span>
                                         </div>
                                         <div class="flex-fill">
@@ -890,7 +889,7 @@
                                     <div class="d-flex align-items-center cart-dropdown-item gap-3">
                                         <div class="lh-1">
                                             <span class="avatar avatar-xl bg-primary-transparent">
-                                                <img src="./assets/images/ecommerce/png/16.png" alt="Smart Watch">
+                                                <img src="{% static 'assets/images/ecommerce/png/16.png' %}" alt="Smart Watch">
                                             </span>
                                         </div>
                                         <div class="flex-fill">
@@ -966,12 +965,12 @@
                                     <div class="d-flex align-items-center">
                                         <div class="pe-2 lh-1">
                                             <span class="avatar avatar-md avatar-rounded bg-primary">
-                                                <img src="./assets/images/faces/1.jpg" alt="user1">
+                                                <img src="{% static 'assets/images/faces/1.jpg' %}" alt="user1">
                                             </span>
                                         </div>
                                         <div class="flex-grow-1 d-flex align-items-center justify-content-between">
                                             <div>
-                                                <p class="mb-0 fw-medium"><a href="chat.html">عنوان پیام</a></p>
+                                                <p class="mb-0 fw-medium"><a href="{% url 'chat' %}">عنوان پیام</a></p>
                                                 <div
                                                     class="text-muted fw-normal fs-12 header-notification-text text-truncate">
                                                     توضیحات</div>
@@ -1014,12 +1013,12 @@
                                     <div class="d-flex align-items-center">
                                         <div class="pe-2 lh-1">
                                             <span class="avatar avatar-md bg-orange avatar-rounded">
-                                                <img src="./assets/images/faces/10.jpg" alt="user1">
+                                                <img src="{% static 'assets/images/faces/10.jpg' %}" alt="user1">
                                             </span>
                                         </div>
                                         <div class="flex-grow-1 d-flex align-items-center justify-content-between">
                                             <div>
-                                                <p class="mb-0 fw-medium"><a href="chat.html">عنوان پیام</a></p>
+                                                <p class="mb-0 fw-medium"><a href="{% url 'chat' %}">عنوان پیام</a></p>
                                                 <div
                                                     class="text-muted fw-normal fs-12 header-notification-text text-truncate">
                                                     توضیحات</div>
@@ -1038,12 +1037,12 @@
                                     <div class="d-flex align-items-center">
                                         <div class="pe-2 lh-1">
                                             <span class="avatar avatar-md bg-success avatar-rounded">
-                                                <img src="./assets/images/faces/11.jpg" alt="user1">
+                                                <img src="{% static 'assets/images/faces/11.jpg' %}" alt="user1">
                                             </span>
                                         </div>
                                         <div class="flex-grow-1 d-flex align-items-center justify-content-between">
                                             <div>
-                                                <p class="mb-0 fw-medium"><a href="chat.html">عنوان پیام</a></p>
+                                                <p class="mb-0 fw-medium"><a href="{% url 'chat' %}">عنوان پیام</a></p>
                                                 <div
                                                     class="text-muted fw-normal fs-12 header-notification-text text-truncate">
                                                     توضیحات</div>
@@ -1131,7 +1130,7 @@
                             data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                             <div class="d-flex align-items-center">
                                 <div>
-                                    <img src="./assets/images/faces/15.jpg" alt="img" class="avatar avatar-sm">
+                                    <img src="{% static 'assets/images/faces/15.jpg' %}" alt="img" class="avatar avatar-sm">
                                 </div>
                             </div>
                         </a>
@@ -1146,23 +1145,23 @@
                                     <span class="d-block fs-12 text-muted">طراح سایت</span>
                                 </div>
                             </li>
-                            <li><a class="dropdown-item d-flex align-items-center" href="profile.html"><i
+                            <li><a class="dropdown-item d-flex align-items-center" href="{% url 'profile' %}"><i
                                         class="fe fe-user p-1 rounded-circle bg-primary-transparent me-2 fs-16"></i>حساب
                                     کاربری</a></li>
-                            <li><a class="dropdown-item d-flex align-items-center" href="mail.html"><i
+                            <li><a class="dropdown-item d-flex align-items-center" href="{% url 'mail' %}"><i
                                         class="fe fe-mail p-1 rounded-circle bg-primary-transparent me-2 fs-16"></i>ایمیل</a>
                             </li>
-                            <li><a class="dropdown-item d-flex align-items-center" href="file-manager.html"><i
+                            <li><a class="dropdown-item d-flex align-items-center" href="{% url 'file_manager' %}"><i
                                         class="fe fe-database p-1 rounded-circle bg-primary-transparent klist me-2 fs-16"></i>مدیریت
                                     فایل<span class="badge bg-primary1 text-fixed-white ms-auto fs-9">2</span></a></li>
-                            <li><a class="dropdown-item d-flex align-items-center" href="mail-settings.html"><i
+                            <li><a class="dropdown-item d-flex align-items-center" href="{% url 'mail_settings' %}"><i
                                         class="fe fe-settings p-1 rounded-circle bg-primary-transparent ings me-2 fs-16"></i>تنظیمات</a>
                             </li>
                             <li class="border-top bg-light"><a class="dropdown-item d-flex align-items-center"
-                                    href="chat.html"><i
+                                    href="{% url 'chat' %}"><i
                                         class="fe fe-help-circle p-1 rounded-circle bg-primary-transparent set me-2 fs-16"></i>پشتیبانی</a>
                             </li>
-                            <li><a class="dropdown-item d-flex align-items-center" href="sign-in-cover.html"><i
+                            <li><a class="dropdown-item d-flex align-items-center" href="{% url 'logout' %}"><i
                                         class="fe fe-lock p-1 rounded-circle bg-primary-transparent ut me-2 fs-16"></i>خروج</a>
                             </li>
                         </ul>
@@ -1202,13 +1201,13 @@
 
             <!-- Start::main-sidebar-header -->
             <div class="main-sidebar-header">
-                <a href="index.html" class="header-logo">
-                    <img src="./assets/images/brand-logos/desktop-logo.png" alt="logo" class="desktop-logo">
-                    <img src="./assets/images/brand-logos/toggle-dark.png" alt="logo" class="toggle-dark">
-                    <img src="./assets/images/brand-logos/desktop-dark.png" alt="logo" class="desktop-dark">
-                    <img src="./assets/images/brand-logos/toggle-logo.png" alt="logo" class="toggle-logo">
-                    <img src="./assets/images/brand-logos/toggle-white.png" alt="logo" class="toggle-white">
-                    <img src="./assets/images/brand-logos/desktop-white.png" alt="logo" class="desktop-white">
+                    <a href="{% url 'dashboard' %}" class="header-logo">
+                    <img src="{% static 'assets/images/brand-logos/desktop-logo.png' %}" alt="logo" class="desktop-logo">
+                    <img src="{% static 'assets/images/brand-logos/toggle-dark.png' %}" alt="logo" class="toggle-dark">
+                    <img src="{% static 'assets/images/brand-logos/desktop-dark.png' %}" alt="logo" class="desktop-dark">
+                    <img src="{% static 'assets/images/brand-logos/toggle-logo.png' %}" alt="logo" class="toggle-logo">
+                    <img src="{% static 'assets/images/brand-logos/toggle-white.png' %}" alt="logo" class="toggle-white">
+                    <img src="{% static 'assets/images/brand-logos/desktop-white.png' %}" alt="logo" class="desktop-white">
                 </a>
             </div>
             <!-- End::main-sidebar-header -->
@@ -2473,7 +2472,7 @@
                                             </div>
                                             <div
                                                 class="col-xxl-4 col-xl-7 col-lg-7 col-md-7 col-sm-7 d-sm-block d-none text-end my-auto">
-                                                <img src="./assets/images/media/media-86.png" alt="" class="img-fluid">
+                                                <img src="{% static 'assets/images/media/media-86.png' %}" alt="" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -2643,7 +2642,7 @@
                                                     <div class="d-flex align-items-center gap-2">
                                                         <div class="lh-1">
                                                             <span class="avatar avatar-sm">
-                                                                <img src="./assets/images/ecommerce/jpg/4.jpg" alt="">
+                                                                <img src="{% static 'assets/images/ecommerce/jpg/4.jpg' %}" alt="">
                                                             </span>
                                                         </div>
                                                         <div class="fw-medium">جواهر</div>
@@ -2661,7 +2660,7 @@
                                                     <div class="d-flex align-items-center gap-2">
                                                         <div class="lh-1">
                                                             <span class="avatar avatar-sm">
-                                                                <img src="./assets/images/ecommerce/jpg/6.jpg" alt="">
+                                                                <img src="{% static 'assets/images/ecommerce/jpg/6.jpg' %}" alt="">
                                                             </span>
                                                         </div>
                                                         <div class="fw-medium">لباس</div>
@@ -2679,7 +2678,7 @@
                                                     <div class="d-flex align-items-center gap-2">
                                                         <div class="lh-1">
                                                             <span class="avatar avatar-sm">
-                                                                <img src="./assets/images/ecommerce/jpg/3.jpg" alt="">
+                                                                <img src="{% static 'assets/images/ecommerce/jpg/3.jpg' %}" alt="">
                                                             </span>
                                                         </div>
                                                         <div class="fw-medium">ساعت</div>
@@ -2697,7 +2696,7 @@
                                                     <div class="d-flex align-items-center gap-2">
                                                         <div class="lh-1">
                                                             <span class="avatar avatar-sm">
-                                                                <img src="./assets/images/ecommerce/jpg/1.jpg" alt="">
+                                                                <img src="{% static 'assets/images/ecommerce/jpg/1.jpg' %}" alt="">
                                                             </span>
                                                         </div>
                                                         <div class="fw-medium">کفش</div>
@@ -2715,7 +2714,7 @@
                                                     <div class="d-flex align-items-center gap-2">
                                                         <div class="lh-1">
                                                             <span class="avatar avatar-sm">
-                                                                <img src="./assets/images/ecommerce/jpg/2.jpg" alt="">
+                                                                <img src="{% static 'assets/images/ecommerce/jpg/2.jpg' %}" alt="">
                                                             </span>
                                                         </div>
                                                         <div class="fw-medium">گوشی</div>
@@ -2733,7 +2732,7 @@
                                                     <div class="d-flex align-items-center gap-2">
                                                         <div class="lh-1">
                                                             <span class="avatar avatar-sm">
-                                                                <img src="./assets/images/ecommerce/jpg/5.jpg" alt="">
+                                                                <img src="{% static 'assets/images/ecommerce/jpg/5.jpg' %}" alt="">
                                                             </span>
                                                         </div>
                                                         <div class="fw-medium">لباس</div>
@@ -3030,7 +3029,7 @@
                                                     <div class="d-flex align-items-center gap-3">
                                                         <div class="lh-1">
                                                             <span class="avatar avatar-sm">
-                                                                <img src="./assets/images/faces/1.jpg" alt="">
+                                                                <img src="{% static 'assets/images/faces/1.jpg' %}" alt="">
                                                             </span>
                                                         </div>
                                                         <div>
@@ -3073,7 +3072,7 @@
                                                     <div class="d-flex align-items-center gap-3">
                                                         <div class="lh-1">
                                                             <span class="avatar avatar-sm">
-                                                                <img src="./assets/images/faces/12.jpg" alt="">
+                                                                <img src="{% static 'assets/images/faces/12.jpg' %}" alt="">
                                                             </span>
                                                         </div>
                                                         <div>
@@ -3116,7 +3115,7 @@
                                                     <div class="d-flex align-items-center gap-3">
                                                         <div class="lh-1">
                                                             <span class="avatar avatar-sm">
-                                                                <img src="./assets/images/faces/6.jpg" alt="">
+                                                                <img src="{% static 'assets/images/faces/6.jpg' %}" alt="">
                                                             </span>
                                                         </div>
                                                         <div>
@@ -3159,7 +3158,7 @@
                                                     <div class="d-flex align-items-center gap-3">
                                                         <div class="lh-1">
                                                             <span class="avatar avatar-sm">
-                                                                <img src="./assets/images/faces/14.jpg" alt="">
+                                                                <img src="{% static 'assets/images/faces/14.jpg' %}" alt="">
                                                             </span>
                                                         </div>
                                                         <div>
@@ -3202,7 +3201,7 @@
                                                     <div class="d-flex align-items-center gap-3">
                                                         <div class="lh-1">
                                                             <span class="avatar avatar-sm">
-                                                                <img src="./assets/images/faces/3.jpg" alt="">
+                                                                <img src="{% static 'assets/images/faces/3.jpg' %}" alt="">
                                                             </span>
                                                         </div>
                                                         <div>
@@ -3258,7 +3257,7 @@
                                         <div class="d-flex align-items-start gap-3">
                                             <div class="lh-1">
                                                 <span class="avatar avatar-sm p-1 bg-light border">
-                                                    <img src="./assets/images/flags/us_flag.jpg" alt="">
+                                                    <img src="{% static 'assets/images/flags/us_flag.jpg' %}" alt="">
                                                 </span>
                                             </div>
                                             <div class="flex-fill">
@@ -3278,7 +3277,7 @@
                                         <div class="d-flex align-items-start gap-3">
                                             <div class="lh-1">
                                                 <span class="avatar avatar-sm p-1 bg-light border">
-                                                    <img src="./assets/images/flags/italy_flag.jpg" alt="">
+                                                    <img src="{% static 'assets/images/flags/italy_flag.jpg' %}" alt="">
                                                 </span>
                                             </div>
                                             <div class="flex-fill">
@@ -3298,7 +3297,7 @@
                                         <div class="d-flex align-items-start gap-3">
                                             <div class="lh-1">
                                                 <span class="avatar avatar-sm p-1 bg-light border">
-                                                    <img src="./assets/images/flags/spain_flag.jpg" alt="">
+                                                    <img src="{% static 'assets/images/flags/spain_flag.jpg' %}" alt="">
                                                 </span>
                                             </div>
                                             <div class="flex-fill">
@@ -3318,7 +3317,7 @@
                                         <div class="d-flex align-items-start gap-3">
                                             <div class="lh-1">
                                                 <span class="avatar avatar-sm p-1 bg-light border">
-                                                    <img src="./assets/images/flags/uae_flag.jpg" alt="">
+                                                    <img src="{% static 'assets/images/flags/uae_flag.jpg' %}" alt="">
                                                 </span>
                                             </div>
                                             <div class="flex-fill">
@@ -3338,7 +3337,7 @@
                                         <div class="d-flex align-items-start gap-3">
                                             <div class="lh-1">
                                                 <span class="avatar avatar-sm p-1 bg-light border">
-                                                    <img src="./assets/images/flags/argentina_flag.jpg" alt="">
+                                                    <img src="{% static 'assets/images/flags/argentina_flag.jpg' %}" alt="">
                                                 </span>
                                             </div>
                                             <div class="flex-fill">
@@ -3358,7 +3357,7 @@
                                         <div class="d-flex align-items-start gap-3">
                                             <div class="lh-1">
                                                 <span class="avatar avatar-sm p-1 bg-light border">
-                                                    <img src="./assets/images/flags/china_flag.jpg" alt="">
+                                                    <img src="{% static 'assets/images/flags/china_flag.jpg' %}" alt="">
                                                 </span>
                                             </div>
                                             <div class="flex-fill">
@@ -3378,7 +3377,7 @@
                                         <div class="d-flex align-items-start gap-3">
                                             <div class="lh-1">
                                                 <span class="avatar avatar-sm p-1 bg-light border">
-                                                    <img src="./assets/images/flags/french_flag.jpg" alt="">
+                                                    <img src="{% static 'assets/images/flags/french_flag.jpg' %}" alt="">
                                                 </span>
                                             </div>
                                             <div class="flex-fill">
@@ -3452,53 +3451,53 @@
     <!-- Scroll To Top -->
 
     <!-- Popper JS -->
-    <script src="./assets/libs/%40popperjs/core/umd/popper.min.js"></script>
+    <script src="{% static 'assets/libs/@popperjs/core/umd/popper.min.js' %}"></script>
 
     <!-- Bootstrap JS -->
-    <script src="./assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'assets/libs/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
     <!-- Node Waves JS-->
-    <script src="./assets/libs/node-waves/waves.min.js"></script>
+    <script src="{% static 'assets/libs/node-waves/waves.min.js' %}"></script>
 
     <!-- Simplebar JS -->
-    <script src="./assets/libs/simplebar/simplebar.min.js"></script>
-    <script src="./assets/js/simplebar.js"></script>
+    <script src="{% static 'assets/libs/simplebar/simplebar.min.js' %}"></script>
+    <script src="{% static 'assets/js/simplebar.js' %}"></script>
 
     <!-- Auto Complete JS -->
-    <script src="./assets/libs/tarekraafat/autocomplete.js/autoComplete.min.js"></script>
+    <script src="{% static 'assets/libs/tarekraafat/autocomplete.js/autoComplete.min.js' %}"></script>
 
     <!-- Color Picker JS -->
-    <script src="./assets/libs/simonwep/pickr/pickr.es5.min.js"></script>
+    <script src="{% static 'assets/libs/simonwep/pickr/pickr.es5.min.js' %}"></script>
 
     <!-- Date & Time Picker JS -->
-    <script src="./assets/libs/flatpickr/flatpickr.min.js"></script>
+    <script src="{% static 'assets/libs/flatpickr/flatpickr.min.js' %}"></script>
     <!-- End::main-scripts -->
 
 
     <!-- Apex Charts JS -->
-    <script src="./assets/libs/apexcharts/apexcharts.min.js"></script>
+    <script src="{% static 'assets/libs/apexcharts/apexcharts.min.js' %}"></script>
 
     <!-- Sales Dashboard -->
-    <script src="./assets/js/sales-dashboard.js"></script>
+    <script src="{% static 'assets/js/sales-dashboard.js' %}"></script>
 
 
     <!-- Sticky JS -->
-    <script src="./assets/js/sticky.js"></script>
+    <script src="{% static 'assets/js/sticky.js' %}"></script>
 
     <!-- Defaultmenu JS -->
-    <script src="./assets/js/defaultmenu.min.js"></script>
+    <script src="{% static 'assets/js/defaultmenu.min.js' %}"></script>
 
     <!-- Custom JS -->
-    <script src="./assets/js/custom.js"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
 
     <!-- Custom-Switcher JS -->
-    <script src="./assets/js/custom-switcher.min.js"></script>
+    <script src="{% static 'assets/js/custom-switcher.min.js' %}"></script>
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/css/persianDatepicker-default.css">
-    <script src="./assets/js/persianDatepicker.min.js"></script>
+    <link rel="stylesheet" href="{% static 'assets/css/persianDatepicker-default.css' %}">
+    <script src="{% static 'assets/js/persianDatepicker.min.js' %}"></script>
 
     <script>
 
