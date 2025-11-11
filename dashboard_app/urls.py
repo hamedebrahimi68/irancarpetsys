@@ -1,16 +1,17 @@
 from django.urls import path
-from .views import dashboard_view
+from .views import dashboard_view, login_view, logout_view
 
 urlpatterns = [
-    path('', dashboard_view, name='dashboard'),
-
+    # Authentication
+    path('login/', login_view, name='login'),
+    path('logout/', logout_view, name='logout'),
     
-    # convenience routes used by the template — map to dashboard_view as placeholders
+    # Dashboard and main views
+    path('', dashboard_view, name='dashboard'),
     path('profile/', dashboard_view, name='profile'),
     path('mail/', dashboard_view, name='mail'),
     path('file-manager/', dashboard_view, name='file_manager'),
     path('mail-settings/', dashboard_view, name='mail_settings'),
     path('chat/', dashboard_view, name='chat'),
     path('cart/', dashboard_view, name='cart'),
-    path('logout/', dashboard_view, name='logout'),
 ]
